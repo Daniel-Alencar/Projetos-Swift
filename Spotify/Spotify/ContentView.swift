@@ -20,6 +20,7 @@ struct Playlist: Identifiable {
     var coverURL: String
 }
 
+
 var songsList = [
     Song(id: 1, name: "Numb Encore", artist: "Link Park", coverURL: "https://upload.wikimedia.org/wikipedia/en/d/d6/14_Numb-Encore_%28CD_single%29.jpg"),
     Song(id: 2, name: "Lost", artist: "Link Park", coverURL: "https://upload.wikimedia.org/wikipedia/en/d/d6/14_Numb-Encore_%28CD_single%29.jpg"),
