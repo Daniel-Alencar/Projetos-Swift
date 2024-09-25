@@ -10,10 +10,10 @@ import SwiftUI
 struct SongsList: View {
     var body: some View {
         VStack {
-            
-                ForEach(songsList) { song in
+            ForEach(songsList, id: \.id) { song in
                     SongItem(song: song)
             }
         }
+        .foregroundColor(.white)
     }
 }

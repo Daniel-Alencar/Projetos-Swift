@@ -7,32 +7,59 @@
 
 import SwiftUI
 
-struct Song: Identifiable {
-    var id: Int
-    var name: String
-    var artist: String
-    var coverURL: String
-}
-
 struct Playlist: Identifiable {
     var id: Int
     var name: String
     var coverURL: String
 }
 
+struct Song {
+    var id: Int
+    var name: String
+    var artist: String
+    var fileName: String
+    var fileExtension: String
+    var coverURL: String
+}
 
-var songsList = [
-    Song(id: 1, name: "Numb Encore", artist: "Link Park", coverURL: "https://upload.wikimedia.org/wikipedia/en/d/d6/14_Numb-Encore_%28CD_single%29.jpg"),
-    Song(id: 2, name: "Lost", artist: "Link Park", coverURL: "https://upload.wikimedia.org/wikipedia/en/d/d6/14_Numb-Encore_%28CD_single%29.jpg"),
-    Song(id: 3, name: "In the End", artist: "Link Park", coverURL: "https://upload.wikimedia.org/wikipedia/en/d/d6/14_Numb-Encore_%28CD_single%29.jpg"),
-    Song(id: 4, name: "Crawling", artist: "Link Park", coverURL: "https://upload.wikimedia.org/wikipedia/en/d/d6/14_Numb-Encore_%28CD_single%29.jpg"),
-    Song(id: 5, name: "Somewhere I Belong", artist: "Link Park", coverURL: "https://upload.wikimedia.org/wikipedia/en/d/d6/14_Numb-Encore_%28CD_single%29.jpg"),
-    Song(id: 6, name: "Bleed It Out", artist: "Link Park", coverURL: "https://upload.wikimedia.org/wikipedia/en/d/d6/14_Numb-Encore_%28CD_single%29.jpg"),
-    Song(id: 7, name: "New Divide", artist: "Link Park", coverURL: "https://upload.wikimedia.org/wikipedia/en/d/d6/14_Numb-Encore_%28CD_single%29.jpg"),
-    Song(id: 8, name: "Waiting for the End", artist: "Link Park", coverURL: "https://upload.wikimedia.org/wikipedia/en/d/d6/14_Numb-Encore_%28CD_single%29.jpg"),
-    Song(id: 9, name: "What I've Done", artist: "Link Park", coverURL: "https://upload.wikimedia.org/wikipedia/en/d/d6/14_Numb-Encore_%28CD_single%29.jpg"),
-    Song(id: 10, name: "One Step Closer", artist: "Link Park", coverURL: "https://upload.wikimedia.org/wikipedia/en/d/d6/14_Numb-Encore_%28CD_single%29.jpg")
+let songsList: [Song] = [
+    Song(id: 1,
+         name: "Blinding Lights",
+         artist: "The Weeknd",
+         fileName: "blinding_lights",
+         fileExtension: "mp3",
+         coverURL: "https://link-da-capa.com/blinding_lights.jpg"),
+    
+    Song(id: 2,
+         name: "Shape of You",
+         artist: "Ed Sheeran",
+         fileName: "shape_of_you",
+         fileExtension: "mp3",
+         coverURL: "https://link-da-capa.com/shape_of_you.jpg"),
+    
+    Song(id: 3,
+         name: "Levitating",
+         artist: "Dua Lipa",
+         fileName: "levitating",
+         fileExtension: "mp3",
+         coverURL: "https://link-da-capa.com/levitating.jpg"),
+    
+    Song(id: 4,
+         name: "Circles",
+         artist: "Post Malone",
+         fileName: "circles",
+         fileExtension: "mp3",
+         coverURL: "https://link-da-capa.com/circles.jpg"),
+    
+    Song(id: 5,
+         name: "Dance Monkey",
+         artist: "Tones and I",
+         fileName: "dance_monkey",
+         fileExtension: "mp3",
+         coverURL: "https://link-da-capa.com/dance_monkey.jpg")
 ]
+
+
 
 var playlistsList = [
     Playlist(id: 1, name: "The Dark Side", coverURL: "https://upload.wikimedia.org/wikipedia/pt/3/3b/Dark_Side_of_the_Moon.png"),

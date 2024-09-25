@@ -18,6 +18,7 @@
 		C731AF332CA475C500A74170 /* SongItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C731AF322CA475C500A74170 /* SongItem.swift */; };
 		C731AF352CA475EC00A74170 /* SongsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C731AF342CA475EC00A74170 /* SongsList.swift */; };
 		C731AF372CA47AA800A74170 /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = C731AF362CA47AA800A74170 /* Background.swift */; };
+		C731AF392CA4A35400A74170 /* shape_of_you.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C731AF382CA4A35400A74170 /* shape_of_you.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		C731AF322CA475C500A74170 /* SongItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongItem.swift; sourceTree = "<group>"; };
 		C731AF342CA475EC00A74170 /* SongsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongsList.swift; sourceTree = "<group>"; };
 		C731AF362CA47AA800A74170 /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
+		C731AF382CA4A35400A74170 /* shape_of_you.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = shape_of_you.mp3; path = ../../../../../Downloads/shape_of_you.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 		C731AF222CA3256300A74170 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				C731AF382CA4A35400A74170 /* shape_of_you.mp3 */,
 				C731AF232CA3256300A74170 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -148,6 +151,7 @@
 			files = (
 				C731AF242CA3256300A74170 /* Preview Assets.xcassets in Resources */,
 				C731AF212CA3256300A74170 /* Assets.xcassets in Resources */,
+				C731AF392CA4A35400A74170 /* shape_of_you.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
