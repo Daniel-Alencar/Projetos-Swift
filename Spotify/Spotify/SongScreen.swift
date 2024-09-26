@@ -33,43 +33,57 @@ struct SongScreen: View {
     var body: some View {
         ZStack {
             Background()
-            
-            VStack {
+            VStack (spacing: 100) {
                 VStack {
-                    Image("image")
-                        .resizable()
-                        .frame(width: 200, height: 200)
-                }
-                HStack {
-                    Text(song.name)
-                        .font(.title)
-                }
-                .padding(.horizontal)
-                HStack {
-                    Image(systemName: "person.crop.circle")
-                    Text(song.artist)
-                }
-                .padding(.horizontal)
-                
-                HStack {
-                    SongButton(image: "repeat") {}
-                    SongButton(image: "backward.fill") {}
-                    
-                    // Botão de play/pause
-                    SongButton(image: isPlaying ? "pause.fill" : "play.fill", size: 60) {
-                        if isPlaying {
-                            pauseMusic()
-                        } else {
-                            playMusic()
+                    VStack {
+                        AsyncImage(url: URL(string: song.coverURL)) { image in
+                            image
+                                .resizable()
+                                .aspectRatio(contentMode: .fill)
+                                .frame(width: 250, height: 250)
+                            
+                            // Para arredondar a imagem, se desejar
+                            // .clipShape(Circle())
+                            
+                        } placeholder: {
+                            // Placeholder enquanto a imagem está carregando
+                            ProgressView()
                         }
-                        isPlaying.toggle()
                     }
-                    
-                    SongButton(image: "forward.fill") {}
-                    SongButton(image: "shuffle") {}
+                    HStack {
+                        Text(song.name)
+                            .font(.title)
+                    }
+                    .padding(.horizontal)
+                    HStack {
+                        Image(systemName: "person.crop.circle")
+                        Text(song.artist)
+                    }
+                    .padding(.horizontal)
                 }
+                .foregroundColor(.white)
+                
+                VStack {
+                    HStack {
+                        SongButton(image: "repeat") {}
+                        SongButton(image: "backward.fill") {}
+                        
+                        // Botão de play/pause
+                        SongButton(image: isPlaying ? "pause.fill" : "play.fill", size: 60) {
+                            if isPlaying {
+                                pauseMusic()
+                            } else {
+                                playMusic()
+                            }
+                            isPlaying.toggle()
+                        }
+                        
+                        SongButton(image: "forward.fill") {}
+                        SongButton(image: "shuffle") {}
+                    }
+                }
+                .foregroundColor(.white)
             }
-            .foregroundColor(.white)
         }
         .onAppear {
             print("Tela apareceu, chamando setupAudioPlayer()")

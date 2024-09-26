@@ -24,39 +24,25 @@ struct Song {
 
 let songsList: [Song] = [
     Song(id: 1,
-         name: "Blinding Lights",
-         artist: "The Weeknd",
-         fileName: "blinding_lights",
-         fileExtension: "mp3",
-         coverURL: "https://link-da-capa.com/blinding_lights.jpg"),
+         name: "The emptiness machine",
+         artist: "Link Park",
+         fileName: "the_emptiness_machine",
+         fileExtension: "wav",
+         coverURL: "https://i.scdn.co/image/ab67616d0000b273c0db065619ed208515412917"),
     
     Song(id: 2,
-         name: "Shape of You",
-         artist: "Ed Sheeran",
-         fileName: "shape_of_you",
-         fileExtension: "mp3",
-         coverURL: "https://link-da-capa.com/shape_of_you.jpg"),
+         name: "In the end",
+         artist: "Link Park",
+         fileName: "in_the_end",
+         fileExtension: "wav",
+         coverURL: "https://cdns-images.dzcdn.net/images/cover/2cdaf689097fd1db2e655b0fc12223a5/500x500.jpg"),
     
     Song(id: 3,
-         name: "Levitating",
-         artist: "Dua Lipa",
-         fileName: "levitating",
-         fileExtension: "mp3",
-         coverURL: "https://link-da-capa.com/levitating.jpg"),
-    
-    Song(id: 4,
-         name: "Circles",
-         artist: "Post Malone",
-         fileName: "circles",
-         fileExtension: "mp3",
-         coverURL: "https://link-da-capa.com/circles.jpg"),
-    
-    Song(id: 5,
-         name: "Dance Monkey",
-         artist: "Tones and I",
-         fileName: "dance_monkey",
-         fileExtension: "mp3",
-         coverURL: "https://link-da-capa.com/dance_monkey.jpg")
+         name: "Numb",
+         artist: "Link Park",
+         fileName: "numb",
+         fileExtension: "wav",
+         coverURL: "https://i1.sndcdn.com/artworks-000105604285-me2956-t500x500.jpg")
 ]
 
 

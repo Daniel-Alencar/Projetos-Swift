@@ -18,7 +18,9 @@
 		C731AF332CA475C500A74170 /* SongItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C731AF322CA475C500A74170 /* SongItem.swift */; };
 		C731AF352CA475EC00A74170 /* SongsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C731AF342CA475EC00A74170 /* SongsList.swift */; };
 		C731AF372CA47AA800A74170 /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = C731AF362CA47AA800A74170 /* Background.swift */; };
-		C731AF392CA4A35400A74170 /* shape_of_you.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C731AF382CA4A35400A74170 /* shape_of_you.mp3 */; };
+		C731AF422CA5E63000A74170 /* the_emptiness_machine.wav in Resources */ = {isa = PBXBuildFile; fileRef = C731AF412CA5E63000A74170 /* the_emptiness_machine.wav */; };
+		C731AF442CA5E7DC00A74170 /* in_the_end.wav in Resources */ = {isa = PBXBuildFile; fileRef = C731AF432CA5E7DC00A74170 /* in_the_end.wav */; };
+		C731AF462CA5E7E500A74170 /* numb.wav in Resources */ = {isa = PBXBuildFile; fileRef = C731AF452CA5E7E500A74170 /* numb.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,7 +36,9 @@
 		C731AF322CA475C500A74170 /* SongItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongItem.swift; sourceTree = "<group>"; };
 		C731AF342CA475EC00A74170 /* SongsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongsList.swift; sourceTree = "<group>"; };
 		C731AF362CA47AA800A74170 /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
-		C731AF382CA4A35400A74170 /* shape_of_you.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = shape_of_you.mp3; path = ../../../../../Downloads/shape_of_you.mp3; sourceTree = "<group>"; };
+		C731AF412CA5E63000A74170 /* the_emptiness_machine.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = the_emptiness_machine.wav; path = ../../../../../Downloads/the_emptiness_machine.wav; sourceTree = "<group>"; };
+		C731AF432CA5E7DC00A74170 /* in_the_end.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = in_the_end.wav; path = ../../../../../Downloads/in_the_end.wav; sourceTree = "<group>"; };
+		C731AF452CA5E7E500A74170 /* numb.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = numb.wav; path = ../../../../../Downloads/numb.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,8 +89,10 @@
 		C731AF222CA3256300A74170 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				C731AF382CA4A35400A74170 /* shape_of_you.mp3 */,
 				C731AF232CA3256300A74170 /* Preview Assets.xcassets */,
+				C731AF412CA5E63000A74170 /* the_emptiness_machine.wav */,
+				C731AF432CA5E7DC00A74170 /* in_the_end.wav */,
+				C731AF452CA5E7E500A74170 /* numb.wav */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -149,9 +155,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C731AF462CA5E7E500A74170 /* numb.wav in Resources */,
 				C731AF242CA3256300A74170 /* Preview Assets.xcassets in Resources */,
+				C731AF422CA5E63000A74170 /* the_emptiness_machine.wav in Resources */,
 				C731AF212CA3256300A74170 /* Assets.xcassets in Resources */,
-				C731AF392CA4A35400A74170 /* shape_of_you.mp3 in Resources */,
+				C731AF442CA5E7DC00A74170 /* in_the_end.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
