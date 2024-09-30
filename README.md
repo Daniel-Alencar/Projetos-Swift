@@ -4,11 +4,6 @@
 </h1>
 
 <p align="center">
-  <img src="https://img.shields.io/static/v1?label=Status&message=Finalizado&color=d4f002&style=flat-square&logo=dev">
-  <img alt="GitHub followers" src="https://img.shields.io/github/followers/Daniel-Alencar?logo=github&style=flat-square">
-</p>
-
-<p align="center">
  <a href="#objetivo">Objetivo</a> •
  <a href="#apps">Apps</a> • 
  <a href="#autor">Autor</a>
