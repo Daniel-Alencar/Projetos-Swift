@@ -1,12 +1,4 @@
-//
-//  ContentView.swift
-//  Mapas
-//
-//  Created by Turma01-9 on 26/09/24.
-//
-
 import SwiftUI
-import Foundation
 import MapKit
 
 struct Location: Identifiable {
@@ -50,31 +42,61 @@ var countryLocations = [
     )
 ]
 
-
 struct ContentView: View {
-    
-    @State private var position = MapCameraPosition.region(
-        MKCoordinateRegion(
-            center: CLLocationCoordinate2D(latitude: -142350, longitude: -519253),
-            span: MKCoordinateSpan(latitudeDelta: 1, longitudeDelta: 1)
-        )
+    @State private var region = MKCoordinateRegion(
+        center: CLLocationCoordinate2D(latitude: -14.2350, longitude: -51.9253),
+        span: MKCoordinateSpan(latitudeDelta: 10, longitudeDelta: 10)
     )
     
-    @State private var isSheetPresented = false
+    @State private var selectedLocation: Location = countryLocations[0]
     
+    @State private var isSheetPresented = false
     
     var body: some View {
         ZStack {
             VStack {
-                Map(position: $position)
-                    .ignoresSafeArea()
+                // Map with region and annotations
+                Map(coordinateRegion: $region, annotationItems: countryLocations) { location in
+                    MapAnnotation(coordinate: location.coordinate) {
+                        VStack {
+                            Button(action: {
+                                selectedLocation = location
+                                isSheetPresented = true
+                            }) {
+                                Image(systemName: "mappin.circle.fill")
+                                    .foregroundColor(.red)
+                                    .font(.title)
+                                Text(location.name)
+                                    .font(.caption)
+                                    .background(Color.white)
+                                    .cornerRadius(5)
+                            }
+                            .sheet(isPresented: $isSheetPresented) {
+                                CountryDetails(country: selectedLocation)
+                            }
+                        }
+                    }
+                }
+                .ignoresSafeArea()
             }
             
             VStack {
                 VStack {
                     Text("World map")
-                    Text("Brazil")
+                        .font(.title)
+                        .fontWeight(.bold)
+                    Text("Explore different countries")
+                        .font(.subheadline)
                 }
+                .padding()
+                .frame(maxWidth: .infinity)
+                // Usa o Material para o efeito de blur
+                .background(.regularMaterial)
+                
+                // Arredonda os cantos do VStack
+                // .cornerRadius(15)
+                // Padding externo para espaçamento
+                // .padding()
                 
                 Spacer()
                 
@@ -83,33 +105,30 @@ struct ContentView: View {
                         HStack(spacing: 50) {
                             ForEach(countryLocations) { location in
                                 Button(action: {
-                                    isSheetPresented = true
+                                    selectedLocation = location
+                                    region = MKCoordinateRegion(
+                                        center: location.coordinate,
+                                        span: MKCoordinateSpan(latitudeDelta: 10, longitudeDelta: 10)
+                                    )
+                                    
                                 }) {
                                     AsyncImage(url: URL(string: location.flag)) { image in
                                         image
                                             .resizable()
                                             .aspectRatio(contentMode: .fill)
                                             .frame(width: 50, height: 50)
-                                        
-                                        // Para arredondar a imagem, se desejar
-                                        // .clipShape(Circle())
-                                        
+                                            .clipShape(Circle())
                                     } placeholder: {
-                                        // Placeholder enquanto a imagem está carregando
                                         ProgressView()
                                     }
                                 }
-                                .sheet(isPresented: $isSheetPresented) {
-                                    CountryDetails(country: location)
-                                }
+                                
                             }
                         }
                     }
                 }
                 .padding()
             }
-            
-            
         }
     }
 }
