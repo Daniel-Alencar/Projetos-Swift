@@ -29,10 +29,7 @@
 ### Página de alerta
 <p align="center">
   <div style="display: flex; flex-wrap: wrap;">
-    <img width="400" alt="ArtistScreen" title="#ArtistScreen" src="./assets/ArtistScreen.jpg" />
-    <img width="400" alt="PlaylistScreen" title="#PlaylistScreen" src="./assets/PlaylistScreen.jpg" />
-    <img width="400" alt="MusicScreen" title="#MusicScreen" src="./assets/MusicScreen.jpg" />
-    <img width="400" alt="SearchScreen" title="#SearchScreen" src="./assets/SearchScreen.jpg" />
+    <img width="400" alt="Alert app" title="#AlertApp" src="./assets/AlertApp.jpg" />
   <div>
 </p>
 
