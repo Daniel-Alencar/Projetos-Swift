@@ -1,6 +1,6 @@
 
 <h1 align="center">
-  music-app
+  Projetos Swift
 </h1>
 
 <p align="center">
@@ -10,89 +10,78 @@
 
 <p align="center">
  <a href="#objetivo">Objetivo</a> •
- <a href="#layout">Layout</a> • 
- <a href="#features">Features</a> • 
- <a href="#requisitos">Requisitos</a> • 
- <a href="#rodando-o-app">Rodando o app</a> • 
- <a href="#tecnologias">Tecnologias</a> • 
+ <a href="#apps">Apps</a> • 
  <a href="#autor">Autor</a>
 </p>
 
-### Objetivo
+## Objetivo
 
-<p align="center">
+<p align="">
   Tenho o prazer de lhes apresentar os projetos em Swift UI que foram desenvolvidos em um período de poucas semanas no projeto Hackatruck.
 </p>
 
-## Apps desenvolvidos
+## Apps
 
 ### Página de alerta
 <p align="center">
   <div style="display: flex; flex-wrap: wrap;">
-    <img width="400" alt="Alert app" title="#AlertApp" src="./assets/AlertApp.jpg" />
+    <img width="300" alt="Alert app" title="#AlertApp" src="./assets/AlertApp.png" />
   <div>
 </p>
 
 ### Calculadora de IMC
+<p align="center">
+  <div style="display: flex; flex-wrap: wrap;">
+    <img width="300" alt="IMC app" title="#IMCApp" src="./assets/IMCApp.png" />
+  <div>
+</p>
 
 ### TabNavigation
+<p align="center">
+  <div style="display: flex; flex-wrap: wrap;">
+    <img width="300" alt="Tab Navigation app" title="#TabNavigationApp" src="./assets/TabNavigationApp.png" />
+  <div>
+</p>
 
 ### StackNavigation
+<p align="center">
+  <div style="display: flex; flex-wrap: wrap;">
+    <img width="300" alt="Stack Navigation app" title="#StackNavigationApp" src="./assets/StackNavigationApp.png" />
+  <div>
+</p>
 
 ### Player de música
+<p align="center">
+  <div style="display: flex; flex-wrap: wrap;">
+    <img width="300" alt="Music app" title="#MusicApp" src="./assets/MusicApp.png" />
+  <div>
+</p>
 
 ### Consumo de API de Harry Potter
+<p align="center">
+  <div style="display: flex; flex-wrap: wrap;">
+    <img width="300" alt="API app" title="#APIApp" src="./assets/APIApp.png" />
+  <div>
+</p>
 
 ### Navegação em Mapas
-
 <p align="center">
-  <h1 style="display: flex; flex-wrap: wrap;">
-    <img width="400" alt="ArtistScreen" title="#ArtistScreen" src="./assets/ArtistScreen.jpg" />
-    <img width="400" alt="PlaylistScreen" title="#PlaylistScreen" src="./assets/PlaylistScreen.jpg" />
-    <img width="400" alt="MusicScreen" title="#MusicScreen" src="./assets/MusicScreen.jpg" />
-    <img width="400" alt="SearchScreen" title="#SearchScreen" src="./assets/SearchScreen.jpg" />
-
-  </h1>
+  <div style="display: flex; flex-wrap: wrap;">
+    <img width="300" alt="Map app" title="#MapApp" src="./assets/MapApp.png" />
+  <div>
 </p>
 
 ### Conceitos aprendidos
 
-- [x] Layout de todas as páginas principais
-- [x] Configuração redux
-- [x] Roteamento de telas
+- [x] Componentes básicos
+- [x] Estrutura do Swift UI
+- [x] Navegação de telas (Tab e Stack)
+- [x] SheetView
+- [x] Player de músicas local
+- [x] Consumo de API
+- [x] Desenvolvimento de mapas
 
-### Requisitos
-
-Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
-[Git](https://git-scm.com), [NPM](https://nodejs.org/en/) ou [Yarn](https://yarnpkg.com/) e o [Expo CLI](https://docs.expo.dev/workflow/expo-cli/). 
-Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/).
-
-
-### Rodando o app
-
-```bash
-# Clone este repositório
-$ git clone https://github.com/Daniel-Alencar/mobile-of-music-app
-
-# Acesse a pasta do projeto no terminal/cmd
-$ cd mobile-of-music-app
-
-# Instale as dependências
-$ yarn install
-
-# Execute a aplicação
-$ yarn start
-```
-
-### Tecnologias
-
-As seguintes ferramentas foram usadas na construção do projeto:
-
-- [Expo](https://expo.dev/)
-- [React Native](https://reactnative.dev/)
-- [TypeScript](https://www.typescriptlang.org/)
-
-### Autor
+## Autor
 
 <img 
     style="border-radius: 50%;"
